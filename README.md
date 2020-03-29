@@ -2,7 +2,7 @@
  Tic Tac Toe game made to test my front-end skills.  
  Skills used include CSS Flexbox, jQuery/DOM manipulation, and basic HTML5/CSS3/JS stuff.
 
-![Example Image]("images/demo.png");
+![Tic Tac Toe]("images/demo.png")
 
 ## There are three difficulties
  **Easy** - AI randomly selects cells.  

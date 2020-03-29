@@ -1,0 +1,138 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #333333;
+
+	margin: 0;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	height: 100%;
+
+	color: rgb(255, 128, 32);
+	background-color: white;
+
+	font-family: inherit;
+	font-size: inherit;
+	text-transform: uppercase;
+	line-height: 32px;
+
+	background: none;
+	border: none;
+	outline: none;
+
+	transition: all 250ms;
+}
+
+button:hover, button.selected-button {
+	color: white;
+	background-color: rgb(255, 128, 32);
+}
+
+div.header-bar {
+	color: white;
+	background-color: rgb(255, 128, 32);
+
+	margin: 0;
+	padding: 20px 0;
+}
+
+div.controls-bar {
+	background-color: white;
+	line-height: 32px;
+
+	border-top: 5px solid rgb(255, 64, 0);
+}
+
+div.controls {
+	text-align: center;
+	clear: both;
+
+	margin: 0 25%;
+}
+
+div.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+div.cell {
+	flex: 30%;
+	max-width: 30%;
+
+	background-color: white;
+	background-size: cover;
+	
+	border-radius: 15px;
+	margin: 1.66% 0;
+	padding-bottom: 30%;
+
+	transition: all 500ms;
+}
+
+div.cell:hover {
+	background-color: #888888;
+}
+
+.o {
+	background-image: url("../assets/o.png");
+}
+
+.x {
+	background-image: url("../assets/x.png");
+}
+
+div.difficulty-buttons {
+	float: right;
+}
+
+button.difficulty-button {
+	float: left;
+}
+
+#resultText {
+	display: inline;
+	margin: 0;
+}
+
+#newGameButton {
+	float: left;
+}
+
+@media (max-width: 1280px) {
+	div.controls {
+		margin: 0 5%;
+		padding: 0;
+	}
+
+	div.container {
+		max-width: 80%;
+	}
+
+	div.difficulty-buttons, button.difficulty-button, #newGameButton {
+		float: none;
+	}
+
+	#newGameButton {
+		margin: auto;
+	}
+
+	#newGameButton, #resultText {
+		display: block;
+	}
+}
